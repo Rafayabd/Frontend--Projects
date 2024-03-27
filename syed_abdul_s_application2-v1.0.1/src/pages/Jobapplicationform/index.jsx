@@ -13,8 +13,8 @@ const JobapplicationformPage = () => {
               className="h-[140px] mb-[undefinedpx] mt-auto object-cover w-[37%] z-[1]"
               src="images/img_ellipse1_19.png"
               alt="ellipseOne_One"
-            />
-            <Img
+            /> 
+             <Img
               className="h-[350px] mb-[-24.36px] ml-auto object-cover w-[29%] z-[1]"
               src="images/img_ellipse2_11.png"
               alt="ellipseTwo_One"
@@ -27,25 +27,25 @@ const JobapplicationformPage = () => {
                   alt="groupFiftySeven"
                 />
                 <Text
-                  className="capitalize md:text-5xl text-[85px] text-center text-indigo-900"
+                  className="capitalize md:text-5xl mt-14 text-[85px] text-center text-indigo-900"
                   size="txtAgrandirTextBold85"
                 >
-                  Job application form
+                  Blog
                 </Text>
                 <div className="h-[139px] md:mt-0 mt-[153px] relative w-[8%] md:w-full">
-                  <Img
+                  {/* <Img
                     className="h-[139px] m-auto object-cover w-full"
                     src="images/img_ellipse1_18.png"
                     alt="ellipseOne"
-                  />
+                  /> */}
                   <div className="absolute bottom-[0] h-[123px] right-[0] w-[89%]">
-                    <Img
+                    {/* <Img
                       className="h-[123px] m-auto object-cover w-full"
                       src="images/img_ellipse2_10.png"
                       alt="ellipseTwo"
-                    />
+                    /> */}
                     <div className="absolute bottom-[0] h-[108px] right-[0] w-[88%]">
-                      <Img
+                      {/* <Img
                         className="h-[108px] m-auto object-cover w-full"
                         src="images/img_ellipse3_5.png"
                         alt="ellipseThree"
@@ -54,63 +54,63 @@ const JobapplicationformPage = () => {
                         className="absolute bottom-[0] h-[91px] object-cover right-[0] w-[84%]"
                         src="images/img_ellipse4_5.png"
                         alt="ellipseFour"
-                      />
+                      /> */}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="absolute flex flex-col font-poppins md:gap-10 gap-[125px] inset-x-[0] justify-start mx-auto top-[8%] w-[92%]">
+          <div className="absolute flex flex-col font-poppins md:gap-10 gap-[125px] inset-x-[0] justify-start mx-auto top-[5%] w-[100%]">
             <div className="flex flex-col items-center justify-start w-full">
               <div className="flex flex-col items-center justify-start w-full">
                 <div className="flex flex-col gap-[34px] items-center justify-start w-full">
                   <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-full">
                     <Img
-                      className="h-[54px] md:h-auto object-cover"
+                      className="h-[45px] ml-20 md:h-auto object-cover"
                       src="images/img_speedomassfinal.png"
                       alt="speedomassfinal"
                     />
                     <div className="flex md:flex-1 md:flex-col flex-row gap-[51px] items-start justify-start md:mt-0 mt-[5px] w-auto md:w-full">
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
                         Home
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
                         about us
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
                         Services
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
                         Case studies
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
                         Portfolio
                       </Text>
                       <a
                         href="javascript:"
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                       >
                         <Text size="txtPoppinsRegular19">Contact us</Text>
                       </a>
                     </div>
                     <Button
-                      className="capitalize cursor-pointer min-w-[130px] rounded-[21px] text-center text-lg"
+                      className="capitalize cursor-pointer mr-28 min-w-[120px] rounded-[21px] text-center text-lg"
                       size="sm"
                       variant="gradient"
                       color="indigo_900_indigo_A700"
@@ -122,32 +122,27 @@ const JobapplicationformPage = () => {
                 </div>
               </div>
             </div>
-            <Img
+            {/* <Img
               className="h-[47px] md:ml-[0] ml-[143px] w-[47px]"
               src="images/img_user.svg"
               alt="user"
-            />
+            /> */}
             <div className="flex md:flex-col flex-row md:gap-10 gap-[124px] items-center justify-end md:ml-[0] ml-[497px] w-[48%] md:w-full">
-              <Text
-                className="capitalize text-[19px] text-center text-gray-500"
-                size="txtPoppinsRegular19Gray500"
-              >
-                Please fill out the form below to submit your job application
-              </Text>
-              <Img
+              
+              {/* <Img
                 className="h-[47px] w-[47px]"
                 src="images/img_user.svg"
                 alt="user_One"
-              />
+              /> */}
             </div>
           </div>
         </div>
-        <div className="sm:h-[188px] md:h-[448px] h-[78px] max-w-[1570px] mt-[110px] mx-auto md:px-5 relative w-full">
-          <Img
+        <div className="sm:h-[188px] md:h-[448px] h-[78px] max-w-[1400px] mt-[110px] mx-auto md:px-5 relative w-full">
+          {/* <Img
             className="h-[38px] ml-auto mr-[30px] my-auto w-[38px]"
             src="images/img_search_gray_400_02.svg"
             alt="search"
-          />
+          /> */}
           <div className="absolute flex md:flex-col flex-row md:gap-5 h-full inset-[0] items-start justify-center m-auto w-full">
             <Button
               className="cursor-pointer font-poppins h-[45px] rounded-[17px] text-[15px] text-center w-[191px]"
@@ -192,7 +187,7 @@ const JobapplicationformPage = () => {
             ></Input>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-start max-w-[1569px] mt-[54px] mx-auto md:px-5 w-full">
+        <div className="flex flex-col items-center justify-start max-w-[1400px] mt-[54px] mx-auto md:px-5 w-full">
           <div className="flex flex-col gap-[54px] items-center justify-start w-full">
             <div className="flex md:flex-col flex-row md:gap-[42px] items-center justify-between w-full">
               <div className="flex md:flex-1 flex-col gap-[47px] items-start justify-start w-[58%] md:w-full">
@@ -677,7 +672,7 @@ const JobapplicationformPage = () => {
             </div>
           </div>
         </div>
-        <div className="h-[391px] sm:h-[521px] md:h-[625px] max-w-[1563px] mt-[130px] mx-auto md:px-5 relative w-full">
+        <div className="h-[391px] sm:h-[521px] md:h-[625px] max-w-[1400px] mt-[130px] mx-auto md:px-5 relative w-full">
           <Img
             className="h-[391px] m-auto object-cover rounded-[87px] w-full"
             src="images/img_rectangle24.png"

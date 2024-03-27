@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "pages/Home";
 import NotFound from "pages/NotFound";
+import CustomSpinner from "CustomSpinner/CustomSpinner";
 const Jobapplicationform = React.lazy(() => import("pages/Jobapplicationform"));
 const JobapplicationformOne = React.lazy(
   () => import("pages/JobapplicationformOne"),
@@ -13,15 +14,15 @@ const WebDevelopment = React.lazy(() => import("pages/WebDevelopment"));
 const AppDevelopment = React.lazy(() => import("pages/AppDevelopment"));
 const OurServices = React.lazy(() => import("pages/OurServices"));
 const Aboutus = React.lazy(() => import("pages/Aboutus"));
-const HomeOne = React.lazy(() => import("pages/HomeOne"));
+const Termscondition = React.lazy(() => import("../src/pages/Termscondition/Termscondition"));
+const Privacypolicy = React.lazy(() => import("../src/pages/Privacypolicy/Privacypolicy"));
 const ProjectRoutes = () => {
   return (
-    <React.Suspense fallback={<>Loading...</>}>
+    <React.Suspense fallback={<>{<CustomSpinner/>}</>}>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/homeone" element={<HomeOne />} />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/ourservices" element={<OurServices />} />
           <Route path="/appdevelopment" element={<AppDevelopment />} />
@@ -34,6 +35,9 @@ const ProjectRoutes = () => {
             element={<JobapplicationformOne />}
           />
           <Route path="/jobapplicationform" element={<Jobapplicationform />} />
+          <Route path="/Termscondition" element={<Termscondition />} />
+          <Route path="/Privacypolicy" element={<Privacypolicy />} />
+
         </Routes>
       </Router>
     </React.Suspense>

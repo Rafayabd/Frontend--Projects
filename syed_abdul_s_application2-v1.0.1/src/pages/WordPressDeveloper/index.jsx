@@ -62,56 +62,56 @@ const WordPressDeveloperPage = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute flex flex-col font-poppins md:gap-10 gap-[125px] inset-x-[0] justify-start mx-auto top-[8%] w-[92%]">
+            <div className="absolute flex flex-col font-poppins md:gap-10 gap-[125px] inset-x-[0] justify-start  top-[5%] w-full">
               <div className="flex flex-col items-center justify-start w-full">
                 <div className="flex flex-col items-center justify-start w-full">
                   <div className="flex flex-col gap-[34px] items-center justify-start w-full">
                     <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-full">
                       <Img
-                        className="h-[54px] md:h-auto object-cover"
+                        className="h-[45px] ml-20 md:h-auto object-cover"
                         src="images/img_speedomassfinal.png"
                         alt="speedomassfinal"
                       />
                       <div className="flex md:flex-1 md:flex-col flex-row gap-[51px] items-start justify-start md:mt-0 mt-[5px] w-auto md:w-full">
                         <Text
-                          className="capitalize text-[19px] text-black-900 w-auto"
+                          className="capitalize text-[15px] text-black-900 w-auto"
                           size="txtPoppinsRegular19"
                         >
                           Home
                         </Text>
                         <Text
-                          className="capitalize text-[19px] text-black-900 w-auto"
+                          className="capitalize text-[15px] text-black-900 w-auto"
                           size="txtPoppinsRegular19"
                         >
                           about us
                         </Text>
                         <Text
-                          className="capitalize text-[19px] text-black-900 w-auto"
+                          className="capitalize text-[15px] text-black-900 w-auto"
                           size="txtPoppinsRegular19"
                         >
                           Services
                         </Text>
                         <Text
-                          className="capitalize text-[19px] text-black-900 w-auto"
+                          className="capitalize text-[15px] text-black-900 w-auto"
                           size="txtPoppinsRegular19"
                         >
                           Case studies
                         </Text>
                         <Text
-                          className="capitalize text-[19px] text-black-900 w-auto"
+                          className="capitalize text-[15px] text-black-900 w-auto"
                           size="txtPoppinsRegular19"
                         >
                           Portfolio
                         </Text>
                         <a
                           href="javascript:"
-                          className="capitalize text-[19px] text-black-900 w-auto"
+                          className="capitalize text-[15px] text-black-900 w-auto"
                         >
                           <Text size="txtPoppinsRegular19">Contact us</Text>
                         </a>
                       </div>
                       <Button
-                        className="capitalize cursor-pointer min-w-[130px] rounded-[21px] text-center text-lg"
+                        className="capitalize mr-28 cursor-pointer min-w-[120px] rounded-[21px] text-center text-lg"
                         size="sm"
                         variant="gradient"
                         color="indigo_900_indigo_A700"
@@ -123,7 +123,7 @@ const WordPressDeveloperPage = () => {
                   </div>
                 </div>
               </div>
-              <Img
+              {/* <Img
                 className="h-[47px] md:ml-[0] ml-[143px] w-[47px]"
                 src="images/img_user.svg"
                 alt="user"
@@ -132,15 +132,15 @@ const WordPressDeveloperPage = () => {
                 className="h-[47px] md:ml-[0] ml-[1205px] w-[47px]"
                 src="images/img_user.svg"
                 alt="user_One"
-              />
+              /> */}
             </div>
           </div>
           <Img
-            className="h-[599px] sm:h-auto max-w-[1570px] mt-[110px] mx-auto object-cover rounded-[52px] w-full"
+            className="h-[599px] sm:h-auto max-w-[1400px] mt-[110px] mx-auto object-cover rounded-[52px] w-full"
             src="images/img_rectangle2_599x1570.png"
             alt="rectangleTwo"
           />
-          <div className="flex md:flex-col flex-row font-agrandir md:gap-10 items-start justify-between max-w-[1570px] mt-[60px] mx-auto md:px-5 w-full">
+          <div className="flex md:flex-col flex-row font-agrandir md:gap-10 items-start justify-between max-w-[1400px] mt-[60px] mx-auto md:px-5 w-full">
             <div className="flex md:flex-1 flex-col items-start justify-start w-[58%] md:w-full">
               <Text
                 className="capitalize sm:text-[39px] md:text-[45px] text-[53px] text-indigo-900"
@@ -699,7 +699,7 @@ const WordPressDeveloperPage = () => {
             <div className="flex flex-col items-center justify-start w-full">
               <div className="flex flex-col gap-7 items-start justify-start w-full">
                 <Text
-                  className="capitalize md:text-2xl sm:text-[22px] text-[26px] text-indigo-900"
+                  className="capitalize md:text-2xl ml-8 sm:text-[22px] text-[26px] text-indigo-900"
                   size="txtAgrandirTextBold26Indigo900"
                 >
                   Perks & Benefits You’ll Get{" "}
@@ -806,15 +806,15 @@ const WordPressDeveloperPage = () => {
               </div>
             </div>
           </List>
-          <div className="flex flex-col gap-[22px] items-start justify-start mt-[35px] md:px-5">
+          <div className="flex flex-col gap-[22px] items-start  justify-start mt-[35px] md:px-5">
             <Text
-              className="capitalize md:text-2xl sm:text-[22px] text-[26px] text-indigo-900"
+              className="capitalize md:text-2xl sm:text-[22px] text-[26px] text-indigo-900 "
               size="txtAgrandirTextBold26Indigo900"
             >
               Our Statement
             </Text>
             <Text
-              className="capitalize leading-[189.50%] text-[19px] text-gray-500 text-justify w-full"
+              className="capitalize leading-[189.50%] text-[19px] text-gray-500 justify-center text-center ml-24 mr-24"
               size="txtPoppinsRegular19Gray500"
             >
               Contrary to popular belief, Lorem Ipsum is not simply random text.

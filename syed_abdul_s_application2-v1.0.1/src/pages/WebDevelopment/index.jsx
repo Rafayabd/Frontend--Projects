@@ -9,56 +9,56 @@ const WebDevelopmentPage = () => {
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-poppins gap-6 items-center justify-end mx-auto pt-[52px] w-full">
-        <div className="flex flex-col items-center justify-start max-w-[1578px] mx-auto md:px-5 w-full">
+      <div className="bg-white-A700 flex flex-col font-poppins gap-6 items-center justify-end pt-[35px] w-full">
+        <div className="flex flex-col items-center justify-start   md:px-5 w-full">
           <div className="flex flex-col items-center justify-start w-full">
             <div className="flex flex-col gap-[34px] items-center justify-start w-full">
               <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-full">
                 <Img
-                  className="h-[54px] md:h-auto object-cover"
+                  className="h-[45px] ml-20 md:h-auto object-cover"
                   src="images/img_speedomassfinal.png"
                   alt="speedomassfinal"
                 />
                 <div className="flex md:flex-1 md:flex-col flex-row gap-[51px] items-start justify-start md:mt-0 mt-[5px] w-auto md:w-full">
                   <Text
-                    className="capitalize text-[19px] text-black-900 w-auto"
+                    className="capitalize text-[15px] text-black-900 w-auto"
                     size="txtPoppinsRegular19"
                   >
                     Home
                   </Text>
                   <Text
-                    className="capitalize text-[19px] text-black-900 w-auto"
+                    className="capitalize text-[15px] text-black-900 w-auto"
                     size="txtPoppinsRegular19"
                   >
                     about us
                   </Text>
                   <Text
-                    className="capitalize text-[19px] text-black-900 w-auto"
+                    className="capitalize text-[15px] text-black-900 w-auto"
                     size="txtPoppinsRegular19"
                   >
                     Services
                   </Text>
                   <Text
-                    className="capitalize text-[19px] text-black-900 w-auto"
+                    className="capitalize text-[15px] text-black-900 w-auto"
                     size="txtPoppinsRegular19"
                   >
                     Case studies
                   </Text>
                   <Text
-                    className="capitalize text-[19px] text-black-900 w-auto"
+                    className="capitalize text-[15px] text-black-900 w-auto"
                     size="txtPoppinsRegular19"
                   >
                     Portfolio
                   </Text>
                   <a
                     href="javascript:"
-                    className="capitalize text-[19px] text-black-900 w-auto"
+                    className="capitalize text-[15px] text-black-900 w-auto"
                   >
                     <Text size="txtPoppinsRegular19">Contact us</Text>
                   </a>
                 </div>
                 <Button
-                  className="capitalize cursor-pointer min-w-[130px] rounded-[21px] text-center text-lg"
+                  className="capitalize cursor-pointer mr-28 min-w-[120px] rounded-[21px] text-center text-lg"
                   size="sm"
                   variant="gradient"
                   color="indigo_900_indigo_A700"
@@ -138,7 +138,7 @@ const WebDevelopmentPage = () => {
                 alt="opensourcebro"
               />
             </div>
-            <div className="flex md:flex-col flex-row md:gap-10 gap-[74px] items-center justify-start max-w-[1565px] mt-[110px] mx-auto md:px-5 w-full">
+            <div className="flex md:flex-col flex-row md:gap-10 gap-[74px] items-center justify-start max-w-[1400px] mt-[110px] mx-auto md:px-5 w-full">
               <div className="md:h-[534px] h-[562px] p-3 relative w-[33%] md:w-full">
                 <div className="flex flex-col h-full items-center justify-start m-auto w-[93%]">
                   <div className="flex flex-row items-center justify-between w-full">
@@ -446,7 +446,7 @@ const WebDevelopmentPage = () => {
                 </Text>
               </div>
             </div>
-            <div className="flex md:flex-col flex-row md:gap-5 items-center justify-start max-w-[1486px] mt-[130px] mx-auto md:px-5 w-full">
+            <div className="flex md:flex-col flex-row md:gap-5 items-center justify-start max-w-[1400px] mt-[130px] mx-auto md:px-5 w-full">
               <div className="flex md:flex-1 flex-row gap-[21px] items-center justify-start w-[22%] md:w-full">
                 <Text
                   className="bg-blue-A400 capitalize flex h-[59px] items-center justify-center rounded-[29px] sm:text-[29px] md:text-[31px] text-[33px] text-center text-white-A700 w-[59px]"
@@ -504,7 +504,7 @@ const WebDevelopmentPage = () => {
                 </Text>
               </div>
             </div>
-            <div className="h-[532px] md:h-[662px] max-w-[1545px] mt-[130px] mx-auto md:px-5 relative w-full">
+            <div className="h-[532px] md:h-[662px] max-w-[1400px] mt-[130px] mx-auto md:px-5 relative w-full">
               <Img
                 className="h-[532px] m-auto object-cover rounded-[87px] w-full"
                 src="images/img_rectangle23_532x1545.png"
@@ -518,7 +518,7 @@ const WebDevelopmentPage = () => {
                   <>Challenges into Opportunities with Our Expertise</>
                 </Text>
                 <Text
-                  className="capitalize leading-[189.50%] text-center text-white-A700 text-xl w-full"
+                  className="capitalize leading-[189.50%] text-center text-white-A700 text-1xl w-full"
                   size="txtPoppinsRegular20"
                 >
                   <>
@@ -543,7 +543,7 @@ const WebDevelopmentPage = () => {
                 </Text>
               </div>
             </div>
-            <div className="flex flex-col items-center justify-start max-w-[1549px] mt-[129px] mx-auto md:px-5 w-full">
+            <div className="flex flex-col items-center justify-start max-w-[1400px] mt-[129px] mx-auto md:px-5 w-full">
               <div className="flex md:flex-col flex-row gap-[26px] items-end justify-between w-full">
                 <div className="flex md:flex-1 flex-col md:gap-10 gap-[94px] items-start justify-start w-[52%] md:w-full">
                   <div className="flex flex-col gap-[51px] items-start justify-start w-full">
@@ -598,9 +598,9 @@ const WebDevelopmentPage = () => {
               </div>
             </div>
             <div className="flex flex-col items-start justify-start mt-[129px] md:px-5 w-full">
-              <div className="flex flex-col items-start justify-start w-[94%] md:w-full">
+              <div className="flex flex-col items-start justify-start w-full md:w-full">
                 <Text
-                  className="capitalize sm:text-[39px] md:text-[45px] text-[53px] text-indigo-900"
+                  className="capitalize ml-12 sm:text-[39px] md:text-[45px] text-[53px] text-indigo-900"
                   size="txtAgrandirTextBold53"
                 >
                   Web Development Reviews
@@ -630,12 +630,12 @@ const WebDevelopmentPage = () => {
                               src="images/img_group1000001845.svg"
                               alt="group1000001845"
                             />
-                            <Text
+                            {/* <Text
                               className="capitalize mt-2.5 text-[19px] text-gray-500 text-right"
                               size="txtPoppinsRegular19Gray500"
                             >
                               Jun 25, 2023
-                            </Text>
+                            </Text> */}
                           </div>
                           <Text
                             className="capitalize mt-[29px] text-[22px] text-black-900 sm:text-lg md:text-xl"

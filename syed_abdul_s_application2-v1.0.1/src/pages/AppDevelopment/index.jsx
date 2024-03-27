@@ -9,56 +9,56 @@ const AppDevelopmentPage = () => {
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-poppins gap-6 items-center justify-end mx-auto pt-[52px] w-full">
-        <div className="flex flex-col items-center justify-start max-w-[1578px] mx-auto md:px-5 w-full">
+      <div className="bg-white-A700 flex flex-col font-poppins gap-6 items-center justify-end mx-auto pt-[35px] w-full">
+        <div className="flex flex-col items-center justify-start md:px-5 w-full">
           <div className="flex flex-col items-center justify-start w-full">
             <div className="flex flex-col gap-[34px] items-center justify-start w-full">
               <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-full">
                 <Img
-                  className="h-[54px] md:h-auto object-cover"
+                  className="h-[45px] ml-20 md:h-auto object-cover"
                   src="images/img_speedomassfinal.png"
                   alt="speedomassfinal"
                 />
                 <div className="flex md:flex-1 md:flex-col flex-row gap-[51px] items-start justify-start md:mt-0 mt-[5px] w-auto md:w-full">
                   <Text
-                    className="capitalize text-[19px] text-black-900 w-auto"
+                    className="capitalize text-[15px] text-black-900 w-auto"
                     size="txtPoppinsRegular19"
                   >
                     Home
                   </Text>
                   <Text
-                    className="capitalize text-[19px] text-black-900 w-auto"
+                    className="capitalize text-[15px] text-black-900 w-auto"
                     size="txtPoppinsRegular19"
                   >
                     about us
                   </Text>
                   <Text
-                    className="capitalize text-[19px] text-black-900 w-auto"
+                    className="capitalize text-[15px] text-black-900 w-auto"
                     size="txtPoppinsRegular19"
                   >
                     Services
                   </Text>
                   <Text
-                    className="capitalize text-[19px] text-black-900 w-auto"
+                    className="capitalize text-[15px] text-black-900 w-auto"
                     size="txtPoppinsRegular19"
                   >
                     Case studies
                   </Text>
                   <Text
-                    className="capitalize text-[19px] text-black-900 w-auto"
+                    className="capitalize text-[15px] text-black-900 w-auto"
                     size="txtPoppinsRegular19"
                   >
                     Portfolio
                   </Text>
                   <a
                     href="javascript:"
-                    className="capitalize text-[19px] text-black-900 w-auto"
+                    className="capitalize text-[15px] text-black-900 w-auto"
                   >
                     <Text size="txtPoppinsRegular19">Contact us</Text>
                   </a>
                 </div>
                 <Button
-                  className="capitalize cursor-pointer min-w-[130px] rounded-[21px] text-center text-lg"
+                  className=" mr-28 cursor-pointer min-w-[120px] rounded-[21px] text-center text-lg"
                   size="sm"
                   variant="gradient"
                   color="indigo_900_indigo_A700"
@@ -74,16 +74,16 @@ const AppDevelopmentPage = () => {
           <div className="flex flex-col items-end justify-start overflow-auto w-full">
             <div
               className="bg-cover bg-no-repeat flex md:h-[1076px] sm:h-[713px] h-[755px] justify-end pr-[41px] pt-[41px] md:px-5 relative w-full"
-              style={{ backgroundImage: "url('images/img_banner.png')" }}
+              // style={{ backgroundImage: "url('images/img_banner.png')" }}
             >
               <div className="flex md:flex-col flex-row md:gap-10 h-full items-start justify-between mt-auto w-[92%]">
                 <div className="md:h-[572px] h-[654px] md:mt-0 mt-[59px] relative w-[62%] md:w-full">
                   <div className="absolute bottom-[0] h-[572px] left-[0] w-[78%] md:w-full">
-                    <Img
+                    {/* <Img
                       className="h-[572px] m-auto object-cover w-full"
                       src="images/img_ellipse1_572x755.png"
                       alt="ellipseOne"
-                    />
+                    /> */}
                     <div className="absolute flex flex-col md:gap-10 gap-[289px] items-start justify-start right-[3%] top-[1%] w-[87%]">
                       <Text
                         className="capitalize sm:text-[31px] md:text-[37px] text-[41px] text-yellow-700"
@@ -120,7 +120,7 @@ const AppDevelopmentPage = () => {
                   >
                     Get Started Today!
                   </Text>
-                  <Img
+                  {/* <Img
                     className="absolute h-[47px] right-[36%] top-[6%] w-[47px]"
                     src="images/img_user.svg"
                     alt="user"
@@ -129,17 +129,19 @@ const AppDevelopmentPage = () => {
                     className="absolute h-[47px] left-[22%] top-[0] w-[47px]"
                     src="images/img_user.svg"
                     alt="user_One"
-                  />
+                  /> */}
                 </div>
                 <div className="md:h-[464px] h-[473px] p-1 relative rotate-[-15deg] w-1/5 md:w-full">
                   <Img
-                    className="h-[464px] m-auto object-cover w-[97%]"
+                    className="h-[464px] m-auto object-cover w-[100%]"
                     src="images/img_iphone12pro_464x304.png"
+                   
                     alt="iphone12pro"
                   />
                   <Img
-                    className="absolute h-[442px] inset-[0] justify-center m-auto object-cover w-[89%]"
+                    className="absolute h-[442px] inset-[0] justify-center m-auto object-cover w-[100%]"
                     src="images/img_screeniphone12_442x279.png"
+                    
                     alt="screeniphoneTwelve"
                   />
                 </div>
@@ -157,7 +159,7 @@ const AppDevelopmentPage = () => {
                 />
               </div>
             </div>
-            <div className="flex flex-col md:gap-10 gap-[69px] items-start justify-start max-w-[1570px] mt-[63px] mx-auto md:px-5 w-full">
+            <div className="flex flex-col md:gap-10 gap-[69px] items-start justify-start max-w-[1400px] mt-[63px] mx-auto md:px-5 w-full">
               <Text
                 className="capitalize sm:text-[39px] md:text-[45px] text-[53px] text-indigo-900"
                 size="txtAgrandirTextBold53"
@@ -178,7 +180,7 @@ const AppDevelopmentPage = () => {
                                     <div className="absolute flex flex-col items-center justify-start right-[0] top-[0] w-[94%]">
                                       <div className="flex flex-col justify-start w-full">
                                         <div className="flex flex-row items-end justify-between w-full">
-                                          <Img
+                                          {/* <Img
                                             className="h-[25px]"
                                             src="images/img_settings_blue_gray_100_04.svg"
                                             alt="settings"
@@ -187,13 +189,13 @@ const AppDevelopmentPage = () => {
                                             className="h-4 mt-2"
                                             src="images/img_twistedleaf.svg"
                                             alt="twistedleaf"
-                                          />
+                                          /> */}
                                         </div>
-                                        <Img
+                                        {/* <Img
                                           className="h-[9px] md:ml-[0] ml-[9px] mt-[3px]"
                                           src="images/img_fill16.svg"
                                           alt="fillSixteen"
-                                        />
+                                        /> */}
                                       </div>
                                     </div>
                                     <Img
@@ -486,9 +488,9 @@ const AppDevelopmentPage = () => {
                   src="images/img_vector10.png"
                   alt="vectorTen"
                 />
-                <div className="absolute h-[924px] inset-y-[0] left-[0] my-auto sm:px-5 px-7 w-[65%] sm:w-full">
+                <div className="absolute h-[924px]  left-[0] my-auto sm:px-5 px-7 w-[65%] sm:w-full">
                   <Img
-                    className="h-[924px] m-auto object-cover w-[88%]"
+                    className="h-[924px] m-auto inset-y-[0] object-cover w-[88%]"
                     src="images/img_iphone12pro_924x389.png"
                     alt="iphone12pro_Two"
                   />
@@ -500,7 +502,7 @@ const AppDevelopmentPage = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col items-start justify-start max-w-[1562px] mt-[129px] mx-auto md:px-5 w-full">
+            <div className="flex flex-col items-start justify-start max-w-[1400px] mt-[129px] mx-auto md:px-5 w-full">
               <Text
                 className="capitalize sm:text-[39px] md:text-[45px] text-[53px] text-indigo-900"
                 size="txtAgrandirTextBold53"
@@ -740,12 +742,7 @@ const AppDevelopmentPage = () => {
                               src="images/img_group1000001845.svg"
                               alt="group1000001845"
                             />
-                            <Text
-                              className="capitalize mt-2.5 text-[19px] text-gray-500 text-right"
-                              size="txtPoppinsRegular19Gray500"
-                            >
-                              Jun 25, 2023
-                            </Text>
+                            
                           </div>
                           <Text
                             className="capitalize mt-[29px] text-[22px] text-black-900 sm:text-lg md:text-xl"

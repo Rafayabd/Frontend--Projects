@@ -10,6 +10,7 @@ import {
   Text,
 } from "components";
 import Footer from "components/Footer";
+import { Link } from "react-router-dom";
 
 const selectYourCountryOptionsList = [
   { label: "Option1", value: "option1" },
@@ -20,10 +21,10 @@ const selectYourCountryOptionsList = [
 const ContactUsPage = () => {
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-agrandir items-center justify-start mx-auto w-full">
+      <div className="bg-white-A700 flex flex-col font-agrandir items-center justify-start  w-full">
         <div className="h-[618px] md:px-5 relative w-full">
-          <div className="font-poppins sm:h-80 h-[350px] md:h-[622px] mb-[-30.67px] ml-auto w-[96%] md:w-full z-[1]">
-            <Img
+          <div className="font-poppins sm:h-80 h-[350px] md:h-[622px] mb-[-30.67px] ml-auto w-[100%] md:w-full z-[1]">
+             {/* <Img
               className="absolute h-[350px] inset-y-[0] my-auto object-cover right-[0] w-[30%]"
               src="images/img_ellipse2_3.png"
               alt="ellipseTwo_One"
@@ -31,62 +32,62 @@ const ContactUsPage = () => {
             <Img
               className="absolute bottom-[10%] h-[47px] left-[9%] w-[47px]"
               src="images/img_user.svg"
-              alt="user"
-            />
-            <div className="absolute flex flex-col items-center justify-start left-[0] top-[15%] w-[96%]">
+              alt="user" 
+            /> */}
+            <div className="absolute flex flex-col items-center justify-start left-[0] top-[5%] w-[100%]">
               <div className="flex flex-col items-center justify-start w-full">
                 <div className="flex flex-col gap-[34px] items-center justify-start w-full">
                   <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-full">
                     <Img
-                      className="h-[54px] md:h-auto object-cover"
+                      className=" ml-20 h-[45px] md:h-auto object-cover"
                       src="images/img_speedomassfinal.png"
                       alt="speedomassfinal"
                     />
                     <div className="flex md:flex-1 md:flex-col flex-row gap-[51px] items-start justify-start md:mt-0 mt-[5px] w-auto md:w-full">
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
-                        Home
+                        <Link to="/">Home</Link>
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
-                        about us
+                        <Link to="/aboutus">About Us</Link>
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
-                        Services
+                        <Link to="/ourservices">Our Services</Link>
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
                         Case studies
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
                         Portfolio
                       </Text>
                       <a
                         href="javascript:"
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                       >
-                        <Text size="txtPoppinsSemiBold19">Contact us</Text>
+                        <Text size="txtPoppinsSemiBold19"><Link to="/contactus">Contact Us</Link></Text>
                       </a>
                     </div>
                     <Button
-                      className="capitalize cursor-pointer min-w-[130px] rounded-[21px] text-center text-lg"
+                      className=" mr-28 capitalize cursor-pointer min-w-[120px] rounded-[21px] text-center text-lg"
                       size="sm"
                       variant="gradient"
                       color="indigo_900_indigo_A700"
                     >
-                      Join us
+                      <Link to="/joinus">Join Us</Link>
                     </Button>
                   </div>
                   <Line className="bg-blue_gray-100 h-[3px] w-full" />
@@ -94,11 +95,11 @@ const ContactUsPage = () => {
               </div>
             </div>
           </div>
-          <Img
+          {/* <Img
             className="h-[47px] mb-[undefinedpx] ml-auto mr-[400px] mt-auto w-[47px] z-[1]"
             src="images/img_user.svg"
             alt="user_One"
-          />
+          /> */}
           <div className="flex md:flex-col flex-row md:gap-10 items-end justify-between mt-auto mx-auto w-full">
             <div className="md:h-[229px] h-[298px] relative w-[65%] md:w-full">
               <Text
@@ -108,7 +109,7 @@ const ContactUsPage = () => {
                 Contact Us
               </Text>
               <div className="absolute font-poppins h-72 md:h-[229px] inset-[0] justify-center m-auto w-full">
-                <Img
+                {/* <Img
                   className="absolute h-[229px] left-[0] object-cover top-[0]"
                   src="images/img_group57.png"
                   alt="groupFiftySeven"
@@ -117,7 +118,7 @@ const ContactUsPage = () => {
                   className="absolute bottom-[0] h-[140px] left-[0] object-cover w-[57%]"
                   src="images/img_ellipse1_10.png"
                   alt="ellipseOne"
-                />
+                /> */}
                 <Text
                   className="absolute capitalize right-[0] text-[19px] text-center text-gray-500 top-[41%]"
                   size="txtPoppinsRegular19Gray500"
@@ -127,34 +128,34 @@ const ContactUsPage = () => {
               </div>
             </div>
             <div className="h-[139px] md:mt-0 mt-[159px] relative w-[8%] md:w-full">
-              <Img
+              {/* <Img
                 className="h-[139px] m-auto object-cover w-full"
                 src="images/img_ellipse1_11.png"
                 alt="ellipseOne_One"
-              />
+              /> */}
               <div className="absolute bottom-[0] h-[123px] right-[0] w-[89%]">
-                <Img
+                {/* <Img
                   className="h-[123px] m-auto object-cover w-full"
                   src="images/img_ellipse2_2.png"
                   alt="ellipseTwo"
-                />
+                /> */}
                 <div className="absolute bottom-[0] h-[108px] right-[0] w-[88%]">
-                  <Img
+                  {/* <Img
                     className="h-[108px] m-auto object-cover w-full"
                     src="images/img_ellipse3_1.png"
                     alt="ellipseThree"
-                  />
-                  <Img
+                  /> */}
+                  {/* <Img
                     className="absolute bottom-[0] h-[91px] object-cover right-[0] w-[84%]"
                     src="images/img_ellipse4_1.png"
                     alt="ellipseFour"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="bg-indigo-900 flex font-poppins max-w-[1545px] mt-[110px] mx-auto outline outline-[4px] outline-indigo-900 md:px-5 relative rounded-[87px] shadow-bs11 w-full">
+        <div className="bg-indigo-900 flex font-poppins max-w-[1400px] mt-[110px]  outline outline-[4px] outline-indigo-900 md:px-5 relative rounded-[0px] shadow-bs11 w-full">
           <div className="flex flex-col items-center justify-start my-auto rounded-[87px] w-3/5">
             <div className="flex flex-col justify-start w-full">
               <div className="flex relative w-[65%] sm:w-full">
@@ -399,7 +400,142 @@ const ContactUsPage = () => {
             </div>
           </div>
         </div>
-        <Footer className="bg-gray-50 flex font-poppins items-center justify-center mt-[130px] md:px-5 w-full" />
+        <footer className="bg-gray-50 flex font-poppins items-center justify-center mt-20 md:px-5 w-full">
+            <div className="flex flex-col items-center justify-center mb-[31px] mt-[72px] w-full">
+              <div className="flex flex-col items-center justify-center w-full">
+                <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start w-[91%] md:w-full">
+                  <div className="flex flex-col items-start justify-start md:mt-0 mt-[3px] w-[26%] md:w-full">
+                    <Img
+                      className="h-[63px] sm:h-auto object-cover w-[80%] md:w-full"
+                      src="images/img_speedomassfinal.png"
+                      alt="speedomassfinal_One"
+                    />
+                    <Text
+                      className="capitalize mt-[47px] sm:text-[23px] md:text-[25px] text-[27px] text-indigo-900"
+                      size="txtAgrandirTextBold27"
+                    >
+                      <>Looking to Get Started?</>
+                    </Text>
+                    <Text
+                      className="capitalize leading-[189.50%] mt-[25px] text-gray-500 text-lg w-full"
+                      size="txtPoppinsRegular18"
+                    >
+                      Ready to get started on your project? Contact us today and
+                      let us help you bring your ideas to life.
+                    </Text>
+                  </div>
+                  <div className="flex flex-col gap-[27px] items-start justify-start md:ml-[0] ml-[102px]">
+                    <Text
+                      className="capitalize sm:text-[23px] md:text-[25px] text-[27px] text-indigo-900"
+                      size="txtAgrandirTextBold27"
+                    >
+                      Menu
+                    </Text>
+                    <Text
+                      className="capitalize leading-[229.00%] text-gray-500 text-lg"
+                      size="txtPoppinsRegular18"
+                    >
+                      <>
+                        Home
+                        <br />
+                        About us
+                        <br />
+                        Case Study
+                        <br />
+                        Blogs
+                        <br />
+                        Career / Job opening
+                        <br />
+                        Privacy Policy
+                      </>
+                    </Text>
+                  </div>
+                  <div className="flex flex-col gap-7 items-start justify-start ml-11 md:ml-[0]">
+                    <Text
+                      className="capitalize sm:text-[23px] md:text-[25px] text-[27px] text-indigo-900"
+                      size="txtAgrandirTextBold27"
+                    >
+                      Services
+                    </Text>
+                    <Text
+                      className="capitalize leading-[229.00%] text-gray-500 text-lg"
+                      size="txtPoppinsRegular18"
+                    >
+                      <>
+                        Android App Development
+                        <br />
+                        iOS App Development
+                        <br />
+                        Web Design & Development
+                        <br />
+                        Dashboard Design & Development
+                        <br />
+                        Blockchain Development
+                        <br />
+                        Artificial Intelligence
+                      </>
+                    </Text>
+                  </div>
+                  <div className="flex flex-col items-start justify-start ml-11 md:ml-[0] w-[22%] md:w-full">
+                    <Text
+                      className="capitalize sm:text-[23px] md:text-[25px] text-[27px] text-indigo-900"
+                      size="txtAgrandirTextBold27"
+                    >
+                      Get In touch with us
+                    </Text>
+                    <Text
+                      className="leading-[229.00%] mt-7 text-gray-500 text-lg"
+                      size="txtPoppinsRegular18"
+                    >
+                      <>
+                        Phone: +91 134 123456
+                        <br />
+                        Email: info@speedomass.com
+                      </>
+                    </Text>
+                    <Text
+                      className="capitalize leading-[161.50%] mt-3.5 text-gray-500 text-lg w-full"
+                      size="txtPoppinsRegular18"
+                    >
+                      Location: Location Here Location Here Location Here ,
+                      India
+                    </Text>
+                    <div className="flex flex-row gap-8 items-center justify-center mt-11 w-auto">
+                      <Img
+                        className="h-7 w-7"
+                        src="images/img_bxlfacebook.svg"
+                        alt="bxlfacebook"
+                      />
+                      <Img
+                        className="h-7 w-7"
+                        src="images/img_basilinstagramoutline.svg"
+                        alt="basilinstagramo"
+                      />
+                      <Img
+                        className="h-6 w-6"
+                        src="images/img_akariconslinkedinv2fill.svg"
+                        alt="akariconslinked"
+                      />
+                      <Img
+                        className="h-[22px] w-[22px]"
+                        src="images/img_pajamasx.svg"
+                        alt="pajamasx"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <Line className="bg-gray-400_01 h-px mt-[43px] w-full" />
+                <Text
+                  className="capitalize mt-[29px] text-[19px] text-center text-gray-500"
+                  size="txtPoppinsRegular19Gray500"
+                >
+                  Copyright © 2023 speedomass | All rights reserved 
+                 
+                </Text>
+              </div>
+            </div>
+          </footer>
+        {/* <Footer className="bg-gray-50 flex font-poppins items-center justify-center mt-[130px] md:px-5 w-full" /> */}
       </div>
     </>
   );

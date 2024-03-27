@@ -11,7 +11,7 @@ const Footer = (props) => {
             <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start w-[91%] md:w-full">
               <div className="flex flex-col items-start justify-start md:mt-0 mt-[3px] w-[26%] md:w-full">
                 <Img
-                  className="h-[63px] sm:h-auto object-cover w-[72%] md:w-full"
+                  className="h-[63px] sm:h-auto object-cover w-[80%] md:w-full"
                   src="images/img_speedomassfinal.png"
                   alt="speedomassfinal_One"
                 />
@@ -41,17 +41,17 @@ const Footer = (props) => {
                   size="txtPoppinsRegular18"
                 >
                   <>
-                    Home
+                    Home
                     <br />
                     About us
                     <br />
-                    Case Study
+                    Case Study
                     <br />
-                    Blogs
+                    Blogs
                     <br />
                     Career / Job opening
                     <br />
-                    Privacy Policy
+                    Privacy Policy
                   </>
                 </Text>
               </div>
@@ -67,11 +67,11 @@ const Footer = (props) => {
                   size="txtPoppinsRegular18"
                 >
                   <>
-                    Android App Development
+                    Android App Development
                     <br />
-                    iOS App Development
+                    iOS App Development
                     <br />
-                    Web Design & Development
+                    Web Design & Development
                     <br />
                     Dashboard Design & Development
                     <br />
@@ -133,8 +133,8 @@ const Footer = (props) => {
               className="capitalize mt-[29px] text-[19px] text-center text-gray-500"
               size="txtPoppinsRegular19Gray500"
             >
-              Copyright © 2023 speedomass | All rights reserved designed by
-              Syed Sameed Ali
+              Copyright © 2023 speedomass | All rights reserved
+              
             </Text>
           </div>
         </div>

@@ -3,143 +3,110 @@ import React from "react";
 import { Button, Img, Input, Line, List, Text } from "components";
 import AboutUsStackloremipsum from "components/AboutUsStackloremipsum";
 import Footer from "components/Footer";
+import { Link } from "react-router-dom";
 
 const AboutusPage = () => {
   return (
-    <>
-      <div className="bg-white-A700 flex flex-col font-agrandir items-center justify-start mx-auto w-full">
-        <div className="h-[618px] md:px-5 relative w-full">
-          <div className="font-poppins sm:h-[319px] h-[350px] md:h-[621px] mb-[-31.02px] ml-auto w-[96%] md:w-full z-[1]">
-            <Img
-              className="absolute h-[350px] inset-y-[0] my-auto object-cover right-[0] w-[30%]"
-              src="images/img_ellipse2_350x488.png"
-              alt="ellipseTwo_One"
-            />
-            <Img
-              className="absolute bottom-[10%] h-[47px] left-[9%] w-[47px]"
-              src="images/img_user.svg"
-              alt="user"
-            />
-            <div className="absolute flex flex-col items-center justify-start left-[0] top-[15%] w-[96%]">
+    
+      <div className="bg-white-A700 flex flex-col font-agrandir items-center justify-start  w-full">
+         <div className="h-[618px] md:px-5 relative w-full"> 
+        
+          <div className="font-poppins sm:h-[319px] h-[350px] md:h-[621px] mb-[-31.02px]  w-[96%] md:w-full z-[1]">
+            
+            <div className="absolute flex flex-col items-center justify-start left-[0] top-[5%] w-[100%] ">
               <div className="flex flex-col items-center justify-start w-full">
-                <div className="flex flex-col gap-[34px] items-center justify-start w-full">
+                <div className="flex flex-col gap-[30px] items-center justify-start w-full">
                   <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-full">
                     <Img
-                      className="h-[54px] md:h-auto object-cover"
+                      className=" ml-16 h-[45px] md:h-[40px] object-cover sm: items-center text-center justify-center"
                       src="images/img_speedomassfinal.png"
                       alt="speedomassfinal"
                     />
-                    <div className="flex md:flex-1 md:flex-col flex-row gap-[51px] items-start justify-start md:mt-0 mt-[5px] w-auto md:w-full">
+                    <div className="flex md:flex-1 md:flex-col flex-row gap-[51px] items-start justify-start md:mt-0 mt-[5px] w-auto md:w-full sm:items-center text-center">
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
-                        Home
+                       <Link to="/">Home</Link> 
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsSemiBold19"
                       >
-                        about us
+                        <Link to="/aboutus">About Us</Link>
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
-                        Services
+                        <Link to="/ourservices">Services</Link>
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
                         Case studies
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
-                        Portfolio
+                         Portfolio
                       </Text>
                       <a
                         href="javascript:"
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                       >
-                        <Text size="txtPoppinsRegular19">Contact us</Text>
+                        <Text size="txtPoppinsRegular19"><Link to="/contactus">Contact Us</Link></Text>
                       </a>
+                      
                     </div>
                     <Button
-                      className="capitalize cursor-pointer min-w-[130px] rounded-[21px] text-center text-lg"
+                      className=" mr-28 capitalize cursor-pointer min-w-[120px] rounded-[21px] text-center text-lg"
                       size="sm"
                       variant="gradient"
                       color="indigo_900_indigo_A700"
                     >
-                      Join us
+                      <Link to="/joinus">Join Us</Link>
                     </Button>
                   </div>
                   <Line className="bg-blue_gray-100 h-[3px] w-full" />
                 </div>
               </div>
             </div>
+
+
+
+
           </div>
-          <Img
-            className="h-[47px] mb-[undefinedpx] ml-auto mr-[400px] mt-auto w-[47px] z-[1]"
-            src="images/img_user.svg"
-            alt="user_One"
-          />
-          <div className="flex flex-col items-center justify-start mt-auto mx-auto w-full">
+          
+          <div className="flex flex-col items-center  w-full">
             <div className="flex md:flex-col flex-row md:gap-5 items-end justify-start w-full">
               <div className="h-72 md:h-[229px] md:mt-0 mt-[11px] relative w-[37%] md:w-full">
-                <Img
-                  className="absolute h-[229px] left-[0] object-cover top-[0]"
-                  src="images/img_group57.png"
-                  alt="groupFiftySeven"
-                />
-                <Img
-                  className="absolute bottom-[0] h-[140px] inset-x-[0] mx-auto object-cover w-full"
-                  src="images/img_ellipse1_140x627.png"
-                  alt="ellipseOne"
-                />
-              </div>
+                
               <Text
-                className="capitalize mb-[188px] md:ml-[0] ml-[55px] md:text-5xl text-[85px] text-center text-indigo-900"
+                className="absolute capitalize left-[80%] w-full md:text-5xl text-[85px] text-center text-indigo-900 top-[0]"
                 size="txtAgrandirTextBold85"
               >
-                About us
+                About Us
               </Text>
-              <div className="h-[139px] md:ml-[0] ml-[545px] md:mt-0 mt-40 relative w-[8%] md:w-full">
-                <Img
-                  className="h-[139px] m-auto object-cover w-full"
-                  src="images/img_ellipse1_139x136.png"
-                  alt="ellipseOne_One"
-                />
+               <div className="h-[139px] md:ml-[0] ml-[545px] md:mt-0 mt-40 relative w-[8%] md:w-full">
+                
                 <div className="absolute bottom-[0] h-[123px] right-[0] w-[89%]">
-                  <Img
-                    className="h-[123px] m-auto object-cover w-full"
-                    src="images/img_ellipse2.png"
-                    alt="ellipseTwo"
-                  />
+                   
                   <div className="absolute bottom-[0] h-[108px] right-[0] w-[88%]">
-                    <Img
-                      className="h-[108px] m-auto object-cover w-full"
-                      src="images/img_ellipse3.png"
-                      alt="ellipseThree"
-                    />
-                    <Img
-                      className="absolute bottom-[0] h-[91px] object-cover right-[0] w-[84%]"
-                      src="images/img_ellipse4.png"
-                      alt="ellipseFour"
-                    />
-                  </div>
+                     
+                  </div> 
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-start max-w-[1545px] mt-[109px] mx-auto md:px-5 w-full">
-          <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between w-full">
+        <div className="flex flex-col items-center justify-start max-w-[1400px] mt-[109px] mx-auto md:px-5 w-full">
+          <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between w-full sm:mt-24\\\\">
             <div className="flex flex-col items-start justify-start">
               <Text
-                className="capitalize sm:text-[39px] md:text-[45px] text-[53px] text-indigo-900"
+                className="capitalize sm:text-[39px] md:text-[45px] text-[53px] text-indigo-900 "
                 size="txtAgrandirTextBold53"
               >
                 Our Client say about us
@@ -149,12 +116,10 @@ const AboutusPage = () => {
                 size="txtPoppinsRegular18"
               >
                 <>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry&#39;s
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.Lorem Ipsum is simply dummy text of the printing
-                  and typesetting industry. Lorem Ipsum has been
+                Explore the experiences shared by our clients as they offer insights into their journey 
+                with us. Uncover the stories of satisfaction, partnership, and success that define our 
+                collaborative efforts. Our client testimonials speak louder than words, providing a
+                 glimpse into the genuine trust and satisfaction that define our relationships
                 </>
               </Text>
               <Text
@@ -162,31 +127,20 @@ const AboutusPage = () => {
                 size="txtPoppinsRegular18"
               >
                 <>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry&#39;s
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.Lorem Ipsum is simply dummy text of the printing
-                  and typesetting industry. Lorem Ipsum has been Lorem Ipsum is
-                  simply dummy text of the printing and typesetting industry.
+                Discover the genuine experiences of our valued clients as they share their thoughts
+                 on partnering with us. These testimonials reflect the trust, satisfaction, and success
+                 
+               that define our relationships. Join us in celebrating the voices of those who have
+                experienced the difference with us.
                 </>
               </Text>
             </div>
             <div className="md:h-[379px] h-[453px] relative w-2/5 md:w-full">
-              <Img
-                className="absolute h-[379px] object-cover right-[0] rounded-[54px] top-[0] w-[92%]"
-                src="images/img_blogpic1.png"
-                alt="blogpicOne"
-              />
-              <Img
-                className="absolute bottom-[0] h-[194px] left-[0] object-cover rounded-[54px] w-[49%]"
-                src="images/img_11.png"
-                alt="Eleven"
-              />
+              
             </div>
           </div>
         </div>
-        <div className="h-[572px] md:h-[702px] max-w-[1545px] mt-[130px] mx-auto md:px-5 relative w-full">
+        <div className="h-[572px] md:h-[702px] max-w-[1400px] mt-[130px] mx-auto md:px-5 relative w-full">
           <Img
             className="h-[572px] m-auto object-cover rounded-[87px] w-full"
             src="images/img_rectangle23.png"
@@ -205,14 +159,8 @@ const AboutusPage = () => {
                 size="txtPoppinsRegular20"
               >
                 <>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry&#39;s
-                  standard dummy text ever since the 1500s Lorem Ipsum is simply
-                  dummy text of the printingLorem Ipsum is simply dummy text of
-                  the printing and typesetting industry. Lorem Ipsum has been
-                  the industry&#39;s standard dummy text ever since the 1500s
-                  Lorem Ipsum is simply dummy text of the printingLorem Ipsum is
-                  simply dummy text of the printing and typesetting industry.{" "}
+                As you navigate through the fabric of SpeedoMass, envision a journey that transcends the ordinary. Uncover the core values that guide our endeavors, the significant milestones that shape our narrative, and the unwavering commitment to excellence propelling us forward. Relating to SpeedoMass isn't a mere alignment with a company; it's an immersive experience into a shared narrative
+where your aspirations intertwine with our collective vision.{" "}
                 </>
               </Text>
               <Text
@@ -220,18 +168,13 @@ const AboutusPage = () => {
                 size="txtPoppinsRegular20"
               >
                 <>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry&#39;s
-                  standard dummy text ever since the 1500s Lorem Ipsum is simply
-                  dummy text of the printingLorem Ipsum is simply dummy text of
-                  the printing and typesetting industry. Lorem Ipsum has been
-                  the industry&#39;s standard dummy tex
+                Join us in unraveling this story, forging connections that transform your journey into a meaningful part of ours within the expansive landscape of innovation and creativity.
                 </>
               </Text>
             </div>
           </div>
         </div>
-        <div className="flex md:flex-col flex-row gap-[37px] items-center justify-start max-w-[1545px] mt-[130px] mx-auto md:px-5 w-full">
+        <div className="flex md:flex-col flex-row gap-[37px] items-center justify-start max-w-[1400px] mt-[130px] mx-auto md:px-5 w-full">
           <Img
             className="md:flex-1 h-[609px] sm:h-auto object-cover rounded-[53px] w-[57%] md:w-full"
             src="images/img_image4.png"
@@ -249,21 +192,14 @@ const AboutusPage = () => {
               size="txtPoppinsRegular18"
             >
               <>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&#39;s standard dummy
-                text ever since the 1500s Lorem Ipsum is simply dummy text of
-                the printing
+              At the very core of SpeedoMass, our mission and values serve as the guiding compass, shaping our identity and directing our every endeavor. Our mission is crystal clear: to take the lead in innovation within the realms of IT Development and Event Management. We are dedicated to delivering nothing short of cutting-edge solutions and curating events that leave lasting impressions.
               </>
             </Text>
             <Text
               className="capitalize leading-[189.50%] mt-[22px] text-gray-500 text-justify text-lg w-full"
               size="txtPoppinsRegular18"
             >
-              <>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&#39;s standard dummy
-                text ever since the 1500s
-              </>
+              
             </Text>
             <div className="flex sm:flex-col flex-row font-agrandir gap-8 items-center justify-between mt-[52px] w-full">
               <div className="bg-gradient1  flex flex-col items-center justify-start p-3 rounded-[31px]">
@@ -297,7 +233,7 @@ const AboutusPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-[46px] items-start justify-start max-w-[1553px] mt-[124px] mx-auto md:px-5 w-full">
+        <div className="flex flex-col gap-[46px] items-start justify-start max-w-[1400px] mt-[124px] mx-auto md:px-5 w-full">
           <Text
             className="capitalize sm:text-[39px] md:text-[45px] text-[53px] text-indigo-900"
             size="txtAgrandirTextBold53"
@@ -318,7 +254,7 @@ const AboutusPage = () => {
             ))}
           </List>
         </div>
-        <div className="h-[391px] sm:h-[521px] md:h-[625px] max-w-[1563px] mt-[130px] mx-auto md:px-5 relative w-full">
+        <div className="h-[391px] sm:h-[521px] md:h-[625px] max-w-[1400px] mt-[130px] mx-auto md:px-5 relative w-full">
           <Img
             className="h-[391px] m-auto object-cover rounded-[87px] w-full"
             src="images/img_rectangle24.png"
@@ -347,7 +283,7 @@ const AboutusPage = () => {
               <Input
                 name="groupForty"
                 placeholder="Enter Your Email address ..."
-                className="capitalize font-poppins p-0 placeholder:text-white-A700 text-left text-lg w-full"
+                className="capitalize font-poppins p-0 placeholder:text-white-A700 text-left text-lg w-[295px]"
                 wrapClassName="md:flex-1 md:w-full"
                 type="email"
                 shape="round"
@@ -366,10 +302,14 @@ const AboutusPage = () => {
             </div>
           </div>
         </div>
+        
+       
         <Footer className="bg-gray-50 flex font-poppins items-center justify-center mt-[130px] md:px-5 w-full" />
       </div>
-    </>
+      
+    </div>
   );
 };
 
 export default AboutusPage;
+ 

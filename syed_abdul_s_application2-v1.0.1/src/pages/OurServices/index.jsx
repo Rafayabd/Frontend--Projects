@@ -2,11 +2,12 @@ import React from "react";
 
 import { Button, Img, Line, Text } from "components";
 import Footer from "components/Footer";
+import { Link } from "react-router-dom";
 
 const OurServicesPage = () => {
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-agrandir items-center justify-start mx-auto w-full">
+      <div className="bg-white-A700 flex flex-col font-agrandir items-center justify-start  w-full">
         <div className="h-[618px] md:px-5 relative w-full">
           <div className="font-poppins sm:h-[319px] h-[350px] md:h-[621px] mb-[-31.36px] ml-auto w-[96%] md:w-full z-[1]">
             <Img
@@ -19,60 +20,60 @@ const OurServicesPage = () => {
               src="images/img_user.svg"
               alt="user"
             />
-            <div className="absolute flex flex-col items-center justify-start left-[0] top-[15%] w-[96%]">
+            <div className="absolute flex flex-col items-center justify-start left-[0] top-[5%] w-[100%]">
               <div className="flex flex-col items-center justify-start w-full">
                 <div className="flex flex-col gap-[34px] items-center justify-start w-full">
-                  <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-full">
+                  <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-[100%]">
                     <Img
-                      className="h-[54px] md:h-auto object-cover"
+                      className=" ml-16 h-[45px] md:h-auto object-cover"
                       src="images/img_speedomassfinal.png"
                       alt="speedomassfinal"
                     />
                     <div className="flex md:flex-1 md:flex-col flex-row gap-[51px] items-start justify-start md:mt-0 mt-[5px] w-auto md:w-full">
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
-                        Home
+                        <Link to="/">Home</Link>
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
-                        about us
+                        <Link to="/aboutus">About Us</Link>
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsSemiBold19"
                       >
-                        Services
+                        <Link to="/ourservices">Services</Link>
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
                         Case studies
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
                         Portfolio
                       </Text>
                       <a
                         href="javascript:"
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                       >
-                        <Text size="txtPoppinsRegular19">Contact us</Text>
+                        <Text size="txtPoppinsRegular19"><Link to="/contactus">Contact Us</Link></Text>
                       </a>
                     </div>
                     <Button
-                      className="capitalize cursor-pointer min-w-[130px] rounded-[21px] text-center text-lg"
+                      className="capitalize mr-28 cursor-pointer min-w-[120px] rounded-[21px] text-center text-lg"
                       size="sm"
                       variant="gradient"
                       color="indigo_900_indigo_A700"
                     >
-                      Join us
+                      <Link to="/joinus">Join Us</Link>
                     </Button>
                   </div>
                   <Line className="bg-blue_gray-100 h-[3px] w-full" />
@@ -80,11 +81,11 @@ const OurServicesPage = () => {
               </div>
             </div>
           </div>
-          <Img
+          {/* <Img
             className="h-[47px] mb-[undefinedpx] ml-auto mr-[400px] mt-auto w-[47px] z-[1]"
             src="images/img_user.svg"
             alt="user_One"
-          />
+          /> */}
           <div className="flex md:flex-col flex-row md:gap-10 items-end justify-between mt-auto mx-auto w-full">
             <div className="md:h-[229px] h-[299px] relative w-[66%] md:w-full">
               <Text
@@ -93,33 +94,22 @@ const OurServicesPage = () => {
               >
                 Our Services
               </Text>
-              <div className="absolute h-72 md:h-[229px] inset-y-[0] left-[0] my-auto w-[56%] md:w-full">
-                <Img
-                  className="absolute h-[229px] left-[0] object-cover top-[0]"
-                  src="images/img_group57.png"
-                  alt="groupFiftySeven"
-                />
-                <Img
-                  className="absolute bottom-[0] h-[140px] inset-x-[0] mx-auto object-cover w-full"
-                  src="images/img_ellipse1_1.png"
-                  alt="ellipseOne"
-                />
-              </div>
+              
             </div>
             <div className="h-[139px] md:mt-0 mt-40 relative w-[8%] md:w-full">
-              <Img
+              {/* <Img
                 className="h-[139px] m-auto object-cover w-full"
                 src="images/img_ellipse1_2.png"
                 alt="ellipseOne_One"
-              />
+              /> */}
               <div className="absolute bottom-[0] h-[123px] right-[0] w-[89%]">
-                <Img
+                {/* <Img
                   className="h-[123px] m-auto object-cover w-full"
                   src="images/img_ellipse2_123x120.png"
                   alt="ellipseTwo"
-                />
+                /> */}
                 <div className="absolute bottom-[0] h-[108px] right-[0] w-[88%]">
-                  <Img
+                  {/* <Img
                     className="h-[108px] m-auto object-cover w-full"
                     src="images/img_ellipse3_108x105.png"
                     alt="ellipseThree"
@@ -128,13 +118,13 @@ const OurServicesPage = () => {
                     className="absolute bottom-[0] h-[91px] object-cover right-[0] w-[84%]"
                     src="images/img_ellipse4_91x88.png"
                     alt="ellipseFour"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-start max-w-[1602px] mt-[110px] mx-auto md:px-5 w-full">
+        <div className="flex flex-col items-center justify-start max-w-[1400px] mt-[110px] mx-auto md:px-5 w-full">
           <div className="md:gap-5 gap-6 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center min-h-[auto] w-full">
             <div className="bg-gradient1  hover:cursor-pointer flex flex-1 flex-col items-center justify-start p-[45px] md:px-10 sm:px-5 rounded-[38px] hover:shadow-bs4 shadow-bs4 hover:w-full w-full">
               <div className="flex flex-col gap-[29px] items-start justify-start mb-[15px] w-full">
@@ -162,13 +152,11 @@ const OurServicesPage = () => {
                   </Text>
                 </div>
                 <Text
-                  className="capitalize leading-[189.50%] text-justify text-white-A700 text-xl w-full"
+                  className="capitalize leading-[189.50%] text-justify text-white-A700 text-lg w-full"
                   size="txtPoppinsRegular20"
                 >
                   <>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the
-                    industry&#39;s standard dummy text ever since the 1500s
+                  Crafting seamless experiences that reside in your users' pockets. Our mobile app development team breathes life into your ideas, ensuring user-friendly interfaces and cutting-edge functionality. Elevate your brand with apps that captivate and convert.
                   </>
                 </Text>
               </div>
@@ -200,9 +188,7 @@ const OurServicesPage = () => {
                     size="txtPoppinsRegular19Gray500"
                   >
                     <>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the
-                      industry&#39;s standard dummy text ever since the 1500s
+                    Empower your brand online. Our web development wizards turn ideas into visually stunning websites, from elegant portfolios to robust e-commerce platforms. Transform your vision into a captivating online presence
                     </>
                   </Text>
                 </div>
@@ -235,9 +221,7 @@ const OurServicesPage = () => {
                     size="txtPoppinsRegular19Gray500"
                   >
                     <>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the
-                      industry&#39;s standard dummy text ever since the 1500s
+                    In the digital landscape, we guide your brand to new heights. Tailored strategies amplify your voice, engage your audience, and drive conversions. From SEO to PPC campaigns, we boost your online visibilit
                     </>
                   </Text>
                 </div>
@@ -270,9 +254,7 @@ const OurServicesPage = () => {
                     size="txtPoppinsRegular19Gray500"
                   >
                     <>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the
-                      industry&#39;s standard dummy text ever since the 1500s
+                    We pioneers intuitive dashboard designs, transforming complex data into actionable insights. Elevate your user experience with our precision-crafted dashboard solutions.
                     </>
                   </Text>
                 </div>
@@ -301,9 +283,7 @@ const OurServicesPage = () => {
                     size="txtPoppinsRegular19Gray500"
                   >
                     <>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the
-                      industry&#39;s standard dummy text ever since the 1500s
+                    the potential of Artificial Intelligence to transform your business. From machine learning algorithms to predictive analytics, we deliver AI solutions that propel your operations into the future.
                     </>
                   </Text>
                 </div>
@@ -335,9 +315,7 @@ const OurServicesPage = () => {
                     size="txtPoppinsRegular19Gray500"
                   >
                     <>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the
-                      industry&#39;s standard dummy text ever since the 1500s
+                    Explore the possibilities of decentralized technology with Our blockchain deve-lopment services ensure secure & transparent transactions, bringing innovation & trust to your digital ventures.
                     </>
                   </Text>
                 </div>
@@ -345,7 +323,7 @@ const OurServicesPage = () => {
             </div>
           </div>
         </div>
-        <div className="md:h-[1404px] h-[653px] sm:h-[783px] max-w-[1560px] mt-[130px] mx-auto md:px-5 relative w-full">
+        <div className="md:h-[1404px] h-[653px] sm:h-[783px] max-w-[1400px] mt-[130px] mx-auto md:px-5 relative w-full">
           <Img
             className="h-[653px] m-auto object-cover rounded-[87px] w-full"
             src="images/img_rectangle11_653x1560.png"
@@ -438,7 +416,7 @@ const OurServicesPage = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-[50px] items-start justify-start max-w-[1567px] mt-[129px] mx-auto md:px-5 w-full">
+        <div className="flex flex-col gap-[50px] items-start justify-start max-w-[1400px] mt-[129px] mx-auto md:px-5 w-full">
           <Text
             className="capitalize sm:text-[39px] md:text-[45px] text-[53px] text-indigo-900"
             size="txtAgrandirTextBold53"
@@ -542,7 +520,7 @@ const OurServicesPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-start justify-start max-w-[1555px] mt-[138px] mx-auto md:px-5 w-full">
+        <div className="flex flex-col items-start justify-start max-w-[1400px] mt-[138px] mx-auto md:px-5 w-full">
           <Text
             className="capitalize sm:text-[39px] md:text-[45px] text-[53px] text-indigo-900"
             size="txtAgrandirTextBold53"
@@ -676,7 +654,8 @@ const OurServicesPage = () => {
             </div>
           </div>
         </div>
-        <Footer className="bg-gray-50 flex font-poppins items-center justify-center mt-[130px] md:px-5 w-full" />
+        
+         <Footer className="bg-gray-50 flex font-poppins items-center justify-center mt-[130px] md:px-5 w-full" /> 
       </div>
     </>
   );

@@ -2,6 +2,7 @@ import React from "react";
 
 import { Button, Img, Line, List, Text } from "components";
 import Footer from "components/Footer";
+import { Link } from "react-router-dom";
 
 const JoinusPage = () => {
   return (
@@ -19,60 +20,60 @@ const JoinusPage = () => {
               src="images/img_user.svg"
               alt="user"
             />
-            <div className="absolute flex flex-col items-center justify-start left-[0] top-[15%] w-[96%]">
+            <div className="absolute flex flex-col items-center justify-start left-[0] top-[5%] w-[100%]">
               <div className="flex flex-col items-center justify-start w-full">
                 <div className="flex flex-col gap-[34px] items-center justify-start w-full">
                   <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-full">
                     <Img
-                      className="h-[54px] md:h-auto object-cover"
+                      className=" ml-20 h-[45px] md:h-auto object-cover"
                       src="images/img_speedomassfinal.png"
                       alt="speedomassfinal"
                     />
                     <div className="flex md:flex-1 md:flex-col flex-row gap-[51px] items-start justify-start md:mt-0 mt-[5px] w-auto md:w-full">
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
-                        Home
+                        <Link to= "/">Home</Link>
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
-                        about us
+                        <Link to= "/aboutus">About Us</Link>
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
-                        Services
+                        <Link to="/ourservices">Our Services</Link>
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
                         Case studies
                       </Text>
                       <Text
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                         size="txtPoppinsRegular19"
                       >
                         Portfolio
                       </Text>
                       <a
                         href="javascript:"
-                        className="capitalize text-[19px] text-black-900 w-auto"
+                        className="capitalize text-[15px] text-black-900 w-auto"
                       >
-                        <Text size="txtPoppinsRegular19">Contact us</Text>
+                        <Text size="txtPoppinsRegular19"><Link to="/contactus">Contact us</Link></Text>
                       </a>
                     </div>
                     <Button
-                      className="capitalize cursor-pointer min-w-[130px] rounded-[21px] text-center text-lg"
+                      className=" mr-28 capitalize cursor-pointer min-w-[120px] rounded-[21px] text-center text-lg"
                       size="sm"
                       variant="gradient"
                       color="indigo_900_indigo_A700"
                     >
-                      Join us
+                      <Link to= "/joinus">Join Us</Link>
                     </Button>
                   </div>
                   <Line className="bg-blue_gray-100 h-[3px] w-full" />
@@ -80,11 +81,11 @@ const JoinusPage = () => {
               </div>
             </div>
           </div>
-          <Img
+          {/* <Img
             className="h-[47px] mb-[undefinedpx] ml-auto mr-[400px] mt-auto w-[47px] z-[1]"
             src="images/img_user.svg"
             alt="user_One"
-          />
+          /> */}
           <div className="flex md:flex-col flex-row md:gap-10 items-end justify-between mt-auto mx-auto w-full">
             <div className="md:h-[229px] h-[299px] relative w-[65%] md:w-full">
               <Text
@@ -94,7 +95,7 @@ const JoinusPage = () => {
                 Join us
               </Text>
               <div className="absolute font-poppins h-72 md:h-[229px] inset-[0] justify-center m-auto w-full">
-                <Img
+                {/* <Img
                   className="absolute h-[229px] left-[0] object-cover top-[0]"
                   src="images/img_group57.png"
                   alt="groupFiftySeven"
@@ -103,7 +104,7 @@ const JoinusPage = () => {
                   className="absolute bottom-[0] h-[140px] left-[0] object-cover w-[57%]"
                   src="images/img_ellipse1_12.png"
                   alt="ellipseOne"
-                />
+                /> */}
                 <Text
                   className="absolute capitalize right-[0] text-[19px] text-center text-gray-500 top-[41%]"
                   size="txtPoppinsRegular19Gray500"
@@ -113,19 +114,19 @@ const JoinusPage = () => {
               </div>
             </div>
             <div className="h-[139px] md:mt-0 mt-40 relative w-[8%] md:w-full">
-              <Img
+              {/* <Img
                 className="h-[139px] m-auto object-cover w-full"
                 src="images/img_ellipse1_13.png"
                 alt="ellipseOne_One"
-              />
+              /> */}
               <div className="absolute bottom-[0] h-[123px] right-[0] w-[89%]">
-                <Img
+                {/* <Img
                   className="h-[123px] m-auto object-cover w-full"
                   src="images/img_ellipse2_4.png"
                   alt="ellipseTwo"
-                />
+                /> */}
                 <div className="absolute bottom-[0] h-[108px] right-[0] w-[88%]">
-                  <Img
+                  {/* <Img
                     className="h-[108px] m-auto object-cover w-full"
                     src="images/img_ellipse3_2.png"
                     alt="ellipseThree"
@@ -134,13 +135,13 @@ const JoinusPage = () => {
                     className="absolute bottom-[0] h-[91px] object-cover right-[0] w-[84%]"
                     src="images/img_ellipse4_2.png"
                     alt="ellipseFour"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between max-w-[1570px] mt-[110px] mx-auto md:px-5 w-full">
+        <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between max-w-[1400px] mt-[110px] mx-auto md:px-5 w-full">
           <div className="flex flex-col items-start justify-start">
             <Text
               className="capitalize sm:text-[29px] md:text-[31px] text-[33px] text-yellow-700"
@@ -159,7 +160,7 @@ const JoinusPage = () => {
               </>
             </Text>
             <Text
-              className="capitalize leading-[189.50%] mt-[33px] text-[19px] text-gray-500 text-justify w-full"
+              className="capitalize leading-[189.50%] mt-[33px] text-[15px] text-gray-500 text-justify w-[80%]"
               size="txtPoppinsRegular19Gray500"
             >
               <>
@@ -171,7 +172,7 @@ const JoinusPage = () => {
               </>
             </Text>
             <Text
-              className="capitalize leading-[189.50%] mt-[53px] text-[19px] text-gray-500 text-justify w-full"
+              className="capitalize leading-[189.50%] mt-[53px] text-[15px] text-gray-500 text-justify w-[80%]"
               size="txtPoppinsRegular19Gray500"
             >
               <>
@@ -188,8 +189,8 @@ const JoinusPage = () => {
               className="sm:flex-col flex-row gap-[34px] grid md:grid-cols-1 grid-cols-2 justify-center w-full"
               orientation="horizontal"
             >
-              <div className="flex flex-1 flex-col gap-[34px] items-center justify-start mb-[53px] sm:ml-[0] w-full">
-                <div className="bg-gradient1  flex flex-col h-[336px] items-start justify-center p-[33px] sm:px-5 rounded-[26px] shadow-bs1 w-[336px]">
+              <div className="flex flex-1 flex-col gap-[34px] items-center justify-start mb-[53px] sm:ml-[0] w-[100%]">
+                <div className="bg-gradient1 mr-48 flex flex-col h-[336px] items-start justify-center p-[33px] sm:px-5 rounded-[26px] shadow-bs1 w-[336px]">
                   <Img
                     className="h-[38px] mt-5 w-[38px]"
                     src="images/img_television_white_a700_38x38.svg"
@@ -212,7 +213,7 @@ const JoinusPage = () => {
                     </>
                   </Text>
                 </div>
-                <div className="bg-white-A700 flex flex-col h-[336px] items-start justify-center p-[35px] sm:px-5 rounded-[42px] shadow-bs6 w-[336px]">
+                <div className="bg-white-A700 flex mr-60 flex-col h-[336px] items-start justify-center p-[35px] sm:px-5 rounded-[42px] shadow-bs6 w-[336px]">
                   <Img
                     className="h-[46px] mt-4"
                     src="images/img_settings_yellow_700.svg"
@@ -534,7 +535,8 @@ const JoinusPage = () => {
             </div>
           </div>
         </div>
-        <Footer className="bg-gray-50 flex font-poppins items-center justify-center mt-[130px] md:px-5 w-full" />
+        
+      <Footer className="bg-gray-50 flex font-poppins items-center justify-center mt-[130px] md:px-5 w-full" /> 
       </div>
     </>
   );
